@@ -73,7 +73,7 @@ section {
   margin: 0;
 }
 
-@media (max-width: 780px) {
+@media all and (max-width: 780px) {
   section {
     padding: 0 5vw;
   }
@@ -94,7 +94,7 @@ section {
   }
 }
 
-@media (max-width: 560px) {
+@media all and (max-width: 560px) {
   .navbar {
     margin-bottom: 20px;
   }
