@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+section {
+  padding: 0 10vw;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F55A5A;
+  text-align: center;
+  color: #FFFFFF;
+  height: 60px;
+  margin-bottom: 100px;
+}
+
+.navbar--icon {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 30px;
+}
+
+.card--container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  border-bottom: 2px solid #e3e3e5;
+  max-width: 1400px;
+}
+
+.card--image {
+  max-width: 100%;
+  max-height: 90%;
+  padding: 10px;
+  border-radius: 20px;
+  align-self: center;
+}
+
+.card--text {
+  margin: 30px 30px;
+  max-width: 800px;
+}
+
+.text--icon {
+  color: #F55A5A;
+  margin-right: 10px;
+}
+
+.text--country {
+  margin-right: 20px;
+  letter-spacing: 5px;
+}
+
+.text--maps > a {
+  color: #918E9B;
+}
+
+.text--place {
+  font-size: 2em;
+  margin: 0;
+  line-height: 2.2em;
+}
+
+.card--text > p {
+  color: #918E9B;
+  margin: 0;
+}
+
+@media (max-width: 780px) {
+  section {
+    padding: 0 5vw;
+  }
+
+  .card--container {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .card--image {
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  .text--place {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 560px) {
+  .navbar {
+    margin-bottom: 20px;
+  }
+
+  .card--container {
+    display: flex;
+    border-bottom: 2px solid #e3e3e5;
+    flex-direction: column;
+  }
+
+  .card--container:not:first-child {
+    padding-top: 20px;
+  }
+
+  .card--image {
+    padding: 30px;
+    border-radius: 40px;
+  }
+
+  .card--text {
+    margin-top: 0;
+  }
+}
